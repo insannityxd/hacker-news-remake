@@ -1,0 +1,91 @@
+.background {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    position: absolute;
+    width: 90%;
+    height: 15%;
+    top: 5%;
+    /*border: 2px dashed green;*/
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.header h1 {
+    color: black;
+    background: none;
+    user-select: none;
+}
+
+.news-container {
+    position: absolute;
+    width: 90%;
+    height: 69%;
+    bottom: 5%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(50px, 150px);
+}
+
+.news {
+    border: 5px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+}.title {
+    width: 100%;
+    height: 20%;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    color: black;
+    font-size: 15px;
+    background: none;
+    user-select: none;
+}
+
+.title h1 a {
+    text-decoration: none;
+    background: none;
+    color: black;
+}
+
+.description {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.description h1 {
+    color: green;
+    font-size: 15px;
+    background: none;
+}
+
+.description h1 a {
+    text-decoration: none;
+    background: none;
+    color: green;
+}
+
+.loading-div {
+    position: absolute;
+    color: green;
+    top: 50%;
+}
